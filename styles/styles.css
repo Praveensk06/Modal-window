@@ -19,6 +19,7 @@ html{
 --clr-jet: #323031ff;
 --clr-black:#1f1b1b;
 --clr-white:#ffffff;
+--clr-pink:#e2819e;
 }
 img{
   width: 100%;
@@ -37,4 +38,95 @@ li{
 
 body{
   font-family: 'Poppins', sans-serif;
+  background-color:var(--clr-pink);
+}
+
+
+.title{
+  text-align: center;
+  margin: 1.5rem auto;
+
+}
+.buttons{
+  width: 80%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding: 2rem;
+  margin: auto;
+  gap: 1rem;
+}
+.btn{
+  padding: 0.5rem ;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn1{
+  background-color: var(--clr-red);
+  border: 2px solid var(--clr-red);
+}
+.btn2{
+  background-color: var(--clr-yellow);
+  border: 2px solid rgb(226, 182, 126);
+}
+.btn3{
+  background-color: var(--clr-seaweed);
+  border: 2px solid var(--clr-seaweed);
+}
+
+.modals-container{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem auto;
+  gap: 1.5rem;
+
+}
+.modal-card{
+  background-color:var(--clr-red);
+  color: #ffffff;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: auto ;
+}
+.modal-card2{
+  background-color:var(--clr-yellow);
+  color: #8a3535;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.modal-card3{
+  background-color:var(--clr-seaweed);
+  color: #ffffff;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
+.btn-close,.btn-close2,.btn-close3{
+  padding: 0.3rem;
+  border-radius: 5px;
+  background-color:var(--clr-jet);
+  border: 2px solid var(--clr-black);
+  color: #ffffff;
+  margin: auto 14rem;
+  cursor: pointer;
+}
+
+
+
+.open{
+  display: block;
+}
+
+.close{
+  display: none;
 }
