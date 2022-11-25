@@ -22,7 +22,7 @@ const getModal3 = document.getElementById('modal3');
 const getBtnCls3 =document.getElementById('btn-close3');
 
 
-// function
+// function modal1
 function openModal(){
   getModal.classList.remove('close')
   getModal.classList.add('open')
@@ -32,6 +32,28 @@ function closeModal(){
   getModal.classList.add('close')
   getModal.classList.remove('open')
 
+}
+
+// function modal2
+function openModal2(){
+  getModal2.classList.remove('close')
+  getModal2.classList.add('open')
+}
+
+function closeModal2(){
+  getModal2.classList.add('close')
+  getModal2.classList.remove('open')
+
+}
+// function modal3
+function openModal3(){
+  getModal3.classList.remove('close')
+  getModal3.classList.add('open')
+}
+
+function closeModal3(){
+  getModal3.classList.add('close')
+  getModal3.classList.remove('open')
 
 }
 
@@ -48,21 +70,21 @@ getBtnCls.addEventListener('click',function(){
 // event listeners btn2
 
 getBtn2.addEventListener('click',function(){
- openModal()
+ openModal2()
 });
 
 getBtnCls2.addEventListener('click',function(){
- closeModal()
+ closeModal2()
 });
 
 // event listeners btn3
 
 getBtn3.addEventListener('click',function(){
-openModal()
+openModal3()
 });
 
 getBtnCls3.addEventListener('click',function(){
-closeModal()
+closeModal3()
 
 });
 
@@ -72,8 +94,6 @@ window.addEventListener('keydown', function(event){
     getModal.classList.add('close')
     getModal.classList.remove('open')
 
-    
   }
-
 });
 
